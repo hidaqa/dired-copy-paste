@@ -43,17 +43,17 @@
 ;;
 ;; You can customize default key bindings as follows.
 ;;
-;; (define-key dired-mode-map "" 'dired-copy-paste-do-cut)
-;; (define-key dired-mode-map "" 'dired-copy-paste-do-copy)
-;; (define-key dired-mode-map "" 'dired-copy-paste-do-paste)
+;; (define-key dired-mode-map "\C-c\C-x" 'dired-copy-paste-do-cut)
+;; (define-key dired-mode-map "\C-c\C-c" 'dired-copy-paste-do-copy)
+;; (define-key dired-mode-map "\C-c\C-v" 'dired-copy-paste-do-paste)
 
 ;;; Code:
 
 (require 'dired)
 
-(define-key dired-mode-map "" 'dired-copy-paste-do-cut)
-(define-key dired-mode-map "" 'dired-copy-paste-do-copy)
-(define-key dired-mode-map "" 'dired-copy-paste-do-paste)
+(define-key dired-mode-map "\C-c\C-w" 'dired-copy-paste-do-cut)
+(define-key dired-mode-map "\C-c\C-c" 'dired-copy-paste-do-copy)
+(define-key dired-mode-map "\C-c\C-y" 'dired-copy-paste-do-paste)
 
 (defvar dired-copy-paste-func nil)
 (defvar dired-copy-paste-stored-file-list nil)
